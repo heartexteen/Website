@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #0d0d0d;
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h1 {
+  font-size: 3rem;
+}
+section {
+  margin-top: 3rem;
+}
