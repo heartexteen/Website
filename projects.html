@@ -8,7 +8,7 @@
     <meta name="author" content="Webpixels">
     <title>Projects</title>
     <!-- Favicon -->
-    <link href="Images/favi_big.png" rel="icon" type="image/png">
+    <link href="Images/favicon.svg" rel="icon" type="image/svg+xml">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
@@ -83,8 +83,8 @@
                                         </h4>
                                     </div>
                                     <p class="no-bottom"><i>Vision Transformer-based predictor for competitive two-player fighting games.</i></p>
-                                    <hr class="project-line">ArcadeViT introduces a real-time outcome predictor for two-player fighting games using Vision Transformers. Trained on 693 Street Fighter II matches and 274,000 gameplay frames, it fuses visual cues with health bar trajectories to deliver mid-round predictions with up to 96% ROC-AUC. With inference under one second and open-source benchmarks, ArcadeViT enables predictive overlays that enhance esports viewership while laying the groundwork for broader applications in video understanding and behavioral analytics.
-    </p>                        
+                                    <hr class="project-line">
+                                    <p class="card-text">ArcadeViT introduces a real-time outcome predictor for two-player fighting games using Vision Transformers. Trained on 693 Street Fighter II matches and 274,000 gameplay frames, it fuses visual cues with health bar trajectories to deliver mid-round predictions with up to 96% ROC-AUC. With inference under one second and open-source benchmarks, ArcadeViT enables predictive overlays that enhance esports viewership while laying the groundwork for broader applications in video understanding and behavioral analytics.</p>
                                     <div class="d-inline-flex align-items-start">
                                         <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-77392-1_13">
                                             <button type="button" class="btn btn-primary btn-animated btn-animated-x">
@@ -199,15 +199,42 @@
                                 </div>
                             </div>
                         </div>
-                    
-					
-                  
-				</div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3">
+                        <div class="card-body py-4 card shadow">
+                            <div class="d-inline-block align-items-start">
+                                <div class="d-inline-flex align-items-start">
+                                    <img class="project-icon"
+                                         src="Images/supplychain.svg" alt="Supply Chain Explorer"
+                                         class="img-center">
+                                    <h4 style="margin-top: 10px;">Supply Chain Explorer<br>
+                                        <small>Supply chain network research project with Prof. Deepak Agrawal</small>
+                                    </h4>
+                                </div>
+                                <p class="no-bottom"><i>Interactive, multi-view explorer for company-level supply chain networks.</i></p>
+<hr class="project-line">
+<p class="card-text">Supply Chain Explorer turns Bloomberg SPLC and FactSet relationship data into an interactive map of who supplies whom. It covers roughly 36,000 companies and 3.3 million quarterly supplier–customer snapshots from 2019–2020, with a time slider to watch relationships form and dissolve quarter by quarter. Pick any focal company to see its suppliers and customers side by side, then switch to heat map, geography, and network views, including bipartite, industry-satellite, tier-ring, and upstreamness layouts that rank firms by how far they sit from final demand. News and financials panels add context to each company, and an upload mode runs every view on your own nodes and edges CSVs entirely in the browser. The frontend is plain HTML/JavaScript that streams large CSVs line by line, served by a FastAPI backend deployed on Railway with Docker.</p>
+
+                                <div class="d-inline-flex align-items-start">
+                                    <a target="_blank"
+                                       href="https://supplychainnetworkprojectkit-production.up.railway.app/demo.html">
+                                        <button type="button" class="btn btn-primary btn-animated btn-animated-x">
+                                            <span class="btn-inner--visible">Live Demo</span>
+                                            <span class="btn-inner--hidden"><i class="fas fa-globe"></i></span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                     <!-- End of projects -->
 
                 </div>
             </div>
         </div>
+    </section>
 </main>
 <!-- Core -->
 <script src="Scripts/jquery.min.js"></script>

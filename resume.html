@@ -8,7 +8,7 @@
     <meta name="author" content="Webpixels">
     <title>Resume</title>
     <!-- Favicon -->
-    <link href="Images/favi_big.png" rel="icon" type="image/png">
+    <link href="Images/favicon.svg" rel="icon" type="image/svg+xml">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
@@ -64,8 +64,16 @@
                     <small> A One-Page Summary of My Experience and Skills</small>
                 </h3>
                 <hr id="header-line">
+<div style="margin-bottom: 15px;">
+    <a target="_blank" href="Images/KitTepperResumepdf.pdf">
+        <button type="button" class="btn btn-primary btn-animated btn-animated-x">
+            <span class="btn-inner--visible">Open PDF</span>
+            <span class="btn-inner--hidden"><i class="fas fa-file-pdf"></i></span>
+        </button>
+    </a>
+</div>
 <div style="height: 100vh;">
-<object data="Images/KitTepperResumepdf.pdf" style="background:white; float:inherit; width: 100%; height: 100%;">
+<object data="Images/KitTepperResumepdf.pdf" type="application/pdf" style="background:white; float:inherit; width: 100%; height: 100%;">
     <p>It looks like your browser doesn’t support PDF previews</p>
     <p><a href="Images/KitTepperResumepdf.pdf">Download Here</a></p>
 </object>
@@ -74,8 +82,6 @@
 
             </div>
         </div>
-		<script>
-		</script>
 	</section>
 </main>
 <!-- Core -->
@@ -89,23 +95,7 @@
 <!-- Theme JS -->
 <script src="Scripts/theme.min.js"></script>
 
-<script>
-    var resume = document.getElementById("resume");
-    var resumeButton = document.getElementById("resumeButton");
-    displayResume();
-    window.addEventListener("resize", function () {
-        displayResume();
-    });
-    function displayResume() {
-        if (window.matchMedia("(min-width: 1000px)").matches) {
-            resume.style.display = "block";
-            resumeButton.style.display = "none";
-        } else {
-            resume.style.display = "none";
-            resumeButton.style.display = "block";
-        }
-    }
-</script>
+
 
 </body>
 
